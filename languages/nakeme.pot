@@ -1,0 +1,385 @@
+# Translation of the WordPress theme Starkers HTML5 3.0
+# Copyright (C) 2010 Starkers HTML5
+# This file is distributed under the same license as the Starkers HTML5 package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Starkers HTML5 3.0\n"
+"POT-Creation-Date: 2010-06-15 16:21+0000\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 3.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: 404.php:12 loop.php:21
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:13
+msgid ""
+"Apologies, but the page you requested could not be found. Perhaps searching "
+"will help."
+msgstr ""
+
+#: archive.php:19
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: archive.php:21
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: archive.php:23
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: archive.php:25
+msgid "Blog Archives"
+msgstr ""
+
+#: attachment.php:14
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#. translators: %s - title of parent post
+#: attachment.php:14
+#, php-format
+msgid "&larr; %s"
+msgstr ""
+
+#: attachment.php:22
+#, php-format
+msgid "By %2$s"
+msgstr ""
+
+#: attachment.php:26 functions.php:281
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: attachment.php:33
+#, php-format
+msgid "Published %2$s"
+msgstr ""
+
+#: attachment.php:43
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: attachment.php:46
+msgid "Link to full-size image"
+msgstr ""
+
+#: attachment.php:53 attachment.php:96 loop.php:56 loop.php:74 loop.php:111
+#: onecolumn-page.php:25 page.php:29 single.php:42
+msgid "Edit"
+msgstr ""
+
+#: attachment.php:90 loop.php:70 loop.php:94
+msgid "Continue reading &rarr;"
+msgstr ""
+
+#: attachment.php:92 loop.php:82 onecolumn-page.php:22 page.php:26
+#: single.php:22
+msgid "Pages:"
+msgstr ""
+
+#: author.php:17
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: author.php:23 single.php:33
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: category.php:13
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:30
+#, php-format
+msgid "One Response to %2$s"
+msgid_plural "%1$s Responses to %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:36 comments.php:47
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:37 comments.php:48
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr ""
+
+#. #-#-#-#-#  starkers.pot (Starkers HTML5 3.0)  #-#-#-#-#
+#. Theme URI of the plugin/theme
+#: footer.php:23
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:23
+msgid "Semantic Personal Publishing Platform"
+msgstr ""
+
+#: footer.php:24
+#, php-format
+msgid "Proudly powered by %s."
+msgstr ""
+
+#: functions.php:35
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:58
+#, php-format
+msgid "Search results for %s"
+msgstr ""
+
+#: functions.php:61 functions.php:78
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:119
+#, php-format
+msgid "%s says:"
+msgstr ""
+
+#: functions.php:121
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:128
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:128 functions.php:141
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:141
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:186
+msgid "Primary Widget Area"
+msgstr ""
+
+#: functions.php:188
+msgid "The primary widget area"
+msgstr ""
+
+#: functions.php:197
+msgid "Secondary Widget Area"
+msgstr ""
+
+#: functions.php:199
+msgid "The secondary widget area"
+msgstr ""
+
+#: functions.php:208
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: functions.php:210
+msgid "The first footer widget area"
+msgstr ""
+
+#: functions.php:219
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: functions.php:221
+msgid "The second footer widget area"
+msgstr ""
+
+#: functions.php:230
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: functions.php:232
+msgid "The third footer widget area"
+msgstr ""
+
+#: functions.php:241
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: functions.php:243
+msgid "The fourth footer widget area"
+msgstr ""
+
+#: functions.php:271
+#, php-format
+msgid ""
+"Posted on %2$s by"
+" %3$s"
+msgstr ""
+
+#: functions.php:298
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
+"title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: functions.php:300
+#, php-format
+msgid ""
+"This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
+"\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: functions.php:302
+#, php-format
+msgid ""
+"Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
+"\">permalink</a>."
+msgstr ""
+
+#: loop.php:14 loop.php:126
+msgid "&larr; Older posts"
+msgstr ""
+
+#: loop.php:15 loop.php:127
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: loop.php:22
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: loop.php:30 loop.php:56
+msgctxt "gallery category slug"
+msgid "gallery"
+msgstr ""
+
+#: loop.php:35 loop.php:50 loop.php:86
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: loop.php:50
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr ""
+
+#: loop.php:56
+msgid "View posts in the Gallery category"
+msgstr ""
+
+#: loop.php:56
+msgid "More Galleries"
+msgstr ""
+
+#: loop.php:56 loop.php:74 loop.php:110
+msgid "Leave a comment"
+msgstr ""
+
+#: loop.php:56 loop.php:74 loop.php:110
+msgid "1 Comment"
+msgstr ""
+
+#: loop.php:56 loop.php:74 loop.php:110
+msgid "% Comments"
+msgstr ""
+
+#: loop.php:63
+msgctxt "asides category slug"
+msgid "asides"
+msgstr ""
+
+#: loop.php:102
+#, php-format
+msgid "Posted in %2$s"
+msgstr ""
+
+#: loop.php:108
+#, php-format
+msgid "Tagged %2$s"
+msgstr ""
+
+#: search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:18
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:19
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: sidebar.php:27
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:34
+msgid "Meta"
+msgstr ""
+
+#: single.php:15 single.php:46
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: single.php:16 single.php:47
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: single.php:36
+#, php-format
+msgid "View all posts by %s &rarr;"
+msgstr ""
+
+#: tag.php:13
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Starkers HTML5"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "An HTML5 version of Starkers by Elliot Jay Stocks which is based on Twenty Ten."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Nathan Staines"
+msgstr ""
+
+#. Tags of the plugin/theme
+msgid "starkers, html5, naked, clean, basic"
+msgstr ""

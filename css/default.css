@@ -1,0 +1,19 @@
+/* Default Theme */
+/* ----------------------------------------- */
+
+
+/* Including the 960px grid for the layout */
+@import "libs/960.css";
+
+
+
+/* Sections */
+
+.index{}
+.archive{}
+.category{}
+.tag{}
+.single{}
+.page{}
+.error404{}
+.author{}
