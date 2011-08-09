@@ -1,18 +1,11 @@
 <?php
-/**
- * Starkers functions and definitions
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.0
- */
 
-/** Tell WordPress to run starkers_setup() when the 'after_setup_theme' hook is run. */
-add_action( 'after_setup_theme', 'starkers_setup' );
+/** Tell WordPress to run nakeme_setup() when the 'after_setup_theme' hook is run. */
+add_action( 'after_setup_theme', 'nakeme_setup' );
 
-if ( ! function_exists( 'starkers_setup' ) ):
+if ( ! function_exists( 'nakeme_setup' ) ):
 
-function starkers_setup() {
+function nakeme_setup() {
 
 	add_theme_support( 'post-formats', array( 'aside', 'video' ) );
 	add_theme_support( 'post-thumbnails' );
@@ -21,7 +14,7 @@ function starkers_setup() {
 
 	// Make theme available for translation
 	// Translations can be filed in the /languages/ directory
-	load_theme_textdomain( 'starkers', TEMPLATEPATH . '/languages' );
+	load_theme_textdomain( 'nakeme', TEMPLATEPATH . '/languages' );
 
 	$locale = get_locale();
 	$locale_file = TEMPLATEPATH . "/languages/$locale.php";
@@ -30,14 +23,17 @@ function starkers_setup() {
 
 
 	register_nav_menus( array(
-		'primary' => 'Navegación',
+		'primary' => 'Header navigation',
+		'secondary' => 'Footer navigation',
 	) );
 }
 endif;
 
 
+/**
+ * Removes some links from the header 
+ */
 add_action('init', 'remheadlink');
-
 function remheadlink() {
 	remove_action('wp_head', 'rsd_link');
 	remove_action('wp_head', 'wlwmanifest_link');
@@ -49,14 +45,13 @@ function remheadlink() {
 
 
 
-if ( ! function_exists( 'starkers_posted_on' ) ) :
+if ( ! function_exists( 'nakeme_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post—date/time and author.
  *
- * @since Starkers HTML5 3.0
  */
-function starkers_posted_on() {
-	printf( __( 'Posted on %2$s by %3$s', 'starkers' ),
+function nakeme_posted_on() {
+	printf( __( 'Posted on %2$s by %3$s', 'nakeme' ),
 		'meta-prep meta-prep-author',
 		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time datetime="%3$s" pubdate>%4$s</time></a>',
 			get_permalink(),
@@ -66,28 +61,27 @@ function starkers_posted_on() {
 		),
 		sprintf( '<a href="%1$s" title="%2$s">%3$s</a>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),
-			sprintf( esc_attr__( 'View all posts by %s', 'starkers' ), get_the_author() ),
+			sprintf( esc_attr__( 'View all posts by %s', 'nakeme' ), get_the_author() ),
 			get_the_author()
 		)
 	);
 }
 endif;
 
-if ( ! function_exists( 'starkers_posted_in' ) ) :
+if ( ! function_exists( 'nakeme_posted_in' ) ) :
 /**
  * Prints HTML with meta information for the current post (category, tags and permalink).
  *
- * @since Starkers HTML5 3.0
  */
-function starkers_posted_in() {
+function nakeme_posted_in() {
 	// Retrieves tag list of current post, separated by commas.
 	$tag_list = get_the_tag_list( '', ', ' );
 	if ( $tag_list ) {
-		$posted_in = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'starkers' );
+		$posted_in = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'nakeme' );
 	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-		$posted_in = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'starkers' );
+		$posted_in = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'nakeme' );
 	} else {
-		$posted_in = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'starkers' );
+		$posted_in = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'nakeme' );
 	}
 	// Prints the string, replacing the placeholders.
 	printf(
@@ -101,15 +95,19 @@ function starkers_posted_in() {
 endif;
 
 
-
-function franmoreno_remove_version() {
-return '';
+/**
+ * Removing the WP version
+ */
+function nakeme_remove_version() {
+	return '';
 }
-add_filter('the_generator', 'franmoreno_remove_version');
+add_filter('the_generator', 'nakeme_remove_version');
 
 
 
-
+/**
+ *	Shows thumbnails in the posts or pages admin panel
+ */
 if ( !function_exists('AddThumbColumn') && function_exists('add_theme_support') ) :
     // for post and page
     add_theme_support('post-thumbnails', array( 'post', 'page' ) );
@@ -118,7 +116,7 @@ if ( !function_exists('AddThumbColumn') && function_exists('add_theme_support') 
         return $cols;
     }
     function AddThumbValue($column_name, $post_id) {
-            $width = (int) 90;
+            $width = (int) 90; // You can change the thumbnails width and height
             $height = (int) 90;
             if ( 'thumbnail' == $column_name ) {
                 // thumbnail of WP 2.9
