@@ -1,4 +1,4 @@
-	<aside class="grid_4 omega">
+	<aside class="fourcol last">
 		
 		<section class="search">
 			<?php get_search_form(); ?>

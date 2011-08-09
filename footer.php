@@ -1,4 +1,4 @@
-	<footer class="grid_12">
+	<footer class="row">
 
 	</footer>
 

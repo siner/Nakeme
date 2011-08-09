@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="grid_12 index"> 
+<section class="row index"> 
 
 	<?php get_template_part( 'loop' ); ?>
 	

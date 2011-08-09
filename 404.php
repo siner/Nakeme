@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<section class="grid_12 error404"> 
+<section class="row error404"> 
 
-	<section class="grid_8 alpha">		
+	<section class="eightcol alpha">		
 
 		<article>
 

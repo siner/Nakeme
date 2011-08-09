@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  
-<section class="grid_12 author"> 
+<section class="row author"> 
 
 	<?php if ( have_posts() ) the_post(); ?>
 	 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="grid_12 tag"> 
+<section class="row tag"> 
 
 	<?php get_template_part( 'loop' ); ?>
 	<?php get_sidebar(); ?>

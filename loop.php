@@ -1,4 +1,4 @@
-<section class="grid_8 alpha">		
+<section class="eightcol">		
 
 <?php if ( ! have_posts() ) : ?>
 				<article>

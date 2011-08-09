@@ -6,7 +6,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="es" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
 	<title>
 		<?php
@@ -20,13 +20,14 @@
  </title>
 
 	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/libs/960.css" />
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/libs/1140.css" type="text/css" media="screen" />	
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
  
 
 	<!-- !LEGACY -->
 	<!--[if lt IE 9]>
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/libs/1140ie.css" type="text/css" media="screen" />
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
@@ -62,16 +63,15 @@
 <body <?php body_class(); ?>>
 
 	
-	<div class="container_12">
+	<div class="container">
  
-    <header id="cabecera" class="grid_12">
+    <header id="cabecera" class="row">
 
-        <hgroup>
-            <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-        </hgroup>
-
- 				<nav>
-					<?php /* Add a WP_menu */ ?>
- 				</nav>
+			<div class="threecol">
+        <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			</div>
+ 			<nav class="eightcol">
+				<?php /* Add a WP_menu */ ?>
+ 			</nav>
 
     </header>

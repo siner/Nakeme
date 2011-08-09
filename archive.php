@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="grid_12 archive"> 
+<section class="row archive"> 
 				
 	<?php get_template_part( 'loop' ); ?>
 

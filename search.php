@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<section class="grid_12 search"> 
+<section class="row search"> 
 
 	<?php if ( have_posts() ) :
 			get_template_part( 'loop' );
 		else : ?>
 
-  <section class="grid_8 alpha">
+  <section class="eightcol">
 	
 		<article>
 	
