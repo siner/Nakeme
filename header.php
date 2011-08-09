@@ -67,10 +67,10 @@
  
     <header id="cabecera" class="row">
 
-			<div class="threecol">
+			<div class="fourcol">
         <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			</div>
- 			<nav class="eightcol">
+ 			<nav class="eightcol last">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
  			</nav>
 
