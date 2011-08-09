@@ -28,7 +28,7 @@
 	<!-- !LEGACY -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<script type="text/javascript" src="/js/selectivizr.js"></script>
+	<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
 		 
 <?php
