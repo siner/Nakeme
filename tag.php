@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-<section class="row tag"> 
+<div id="tag"> 
 
 	<?php get_template_part( 'loop' ); ?>
 	<?php get_sidebar(); ?>
 	
-</section>
+</div>
 
 <?php get_footer(); ?>

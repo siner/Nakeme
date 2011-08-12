@@ -1,6 +1,6 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-	<section class="eightcol">		
+	<div id="content">		
 		
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
@@ -12,23 +12,19 @@
 			</header>
  	
  			
- 			<div class="single-content">
-			
+ 			<div id="text">
 				<?php the_content(); ?>
-			
 			</div>
 	
 			
 			<footer>
-      
         <?php $tags_list = get_the_tag_list( '', ' ' ); if ( $tags_list ): echo __('Tags').': '. $tags_list ; endif; ?>
-			
 			</footer>
 				
 		</article>
 
 		<?php comments_template( '', true ); ?>
 
-	</section>
+	</div><!-- #content -->
 
 <?php endwhile; ?>

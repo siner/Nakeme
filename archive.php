@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<section class="row archive"> 
+<div id="archive"> 
 				
 	<?php get_template_part( 'loop' ); ?>
 
 	<?php get_sidebar(); ?>
 
-</section>
+</div><!-- #archive -->
 
 <?php get_footer(); ?>

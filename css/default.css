@@ -1,15 +1,11 @@
 /* Default Theme */
 /* ----------------------------------------- */
 
-/* ============================== */
-/* ! Layout for desktop version   */
-/* ============================== */
 
-	body {
+body {
 		
-	}
+}
 	
-
 
 
 
@@ -36,29 +32,20 @@
 
 
 
-/* ============================= */
-/* ! Layout for mobile version   */
-/* ============================= */
+/* Media queries
+---------------------------------------- */
 
-@media handheld, only screen and (max-width: 767px) {
+/* The media queries included in here are only placeholder. Modify them as your content requires */
 
-	body {
-		
-	}
-
+@media only screen and (min-width: 480px) {
+	/* Wide mobile (480px+) styles go here */
 }
 
+@media only screen and (min-width: 768px) { 
+	/* Tablets/netbooks (768px+) styles go here */
+}
 
-/* ========================================== */
-/* ! Provide higher res assets for iPhone 4   */
-/* ========================================== */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
-
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
-
+@media only screen and (min-width: 1024px) { 
+	/* Desktops (1024px+) styles go here */
 }
 

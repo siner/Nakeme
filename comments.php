@@ -14,14 +14,13 @@
 			<?php printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'nakeme' ), number_format_i18n( get_comments_number() ), '' . get_the_title() . '' ); ?>
 		</h3>
 	
-		<section id="comment-list">
-			<?php wp_list_comments( array( 'style' => 'div', 'callback' => 'nakeme_comment', 'end-callback' => 'nakeme_comment_close' ) ); ?>
-		</section>
+		<ul id="comment-list">
+			<?php wp_list_comments( array( 'style' => 'list') ); ?>
+		</ul>
 	
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav>
-			<?php previous_comments_link( __( '&larr; Older Comments', 'nakeme' ) ); ?>
-			<?php next_comments_link( __( 'Newer Comments &rarr;', 'nakeme' ) ); ?>
+			<?php paginate_comments_links( ) ?>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 	
@@ -35,4 +34,4 @@
 	
 	<?php comment_form(); ?>
 
-</section>
+</section><!-- #comments -->

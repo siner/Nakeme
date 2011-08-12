@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<section class="row index"> 
+<id id="index"> 
 
 	<?php get_template_part( 'loop' ); ?>
 	
 	<?php get_sidebar(); ?>
 
-</section>
+</div><!-- #index -->
 
 <?php get_footer(); ?>

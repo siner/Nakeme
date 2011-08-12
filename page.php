@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<section class="row page"> 
+<div id="page"> 
 
 	<?php get_template_part( 'loop', 'page' ); ?>
 
 	<?php get_sidebar(); ?>
 
-</section>
+</div><!-- -->
 
 <?php get_footer(); ?>

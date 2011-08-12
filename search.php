@@ -1,30 +1,30 @@
 <?php get_header(); ?>
 
-<section class="row search"> 
+<div id="search"> 
 
 	<?php if ( have_posts() ) :
 			get_template_part( 'loop' );
 		else : ?>
 
-  <section class="eightcol">
+  <div id="content">
 	
 		<article>
 	
 			<header>        		
-  	  	<h1><?php echo __('Not Found'); ?></h1>      
+  	  	<h1><?php echo __('Not Found', 'nakeme'); ?></h1>      
 			</header>
 
-      <div class="content">
-      	<p><?php echo __('We can find what you are looking for... You can use the search bar or the menu'); ?></p>
+      <div id="text">
+      	<p><?php echo __('We can find what you are looking for... You can use the search bar or the menu', 'nakeme'); ?></p>
 			</div>
 	
 		</article>
   
-  </section>
+  </div><!-- #content -->
 	<?php endif; ?>
 
 	<?php get_sidebar(); ?>
 
-</section>
+</div><!-- #search -->
 
 <?php get_footer(); ?>

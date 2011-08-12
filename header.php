@@ -20,14 +20,14 @@
  </title>
 
 	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/libs/1140.css" type="text/css" media="screen" />	
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/default.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/print.css" type="text/css" media="print" />	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
  
 
 	<!-- !LEGACY -->
 	<!--[if lt IE 9]>
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/libs/1140ie.css" type="text/css" media="screen" />
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/libs/selectivizr-min.js"></script>
 	<![endif]-->
@@ -62,17 +62,17 @@
  
 <body <?php body_class(); ?>>
 
+	<div id="container">
 	
-	<div class="container">
- 
-    <header id="cabecera" class="row">
-
-			<hgroup class="fourcol">
+		
+		<header id="head">
+	
+			<hgroup>
         <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
         <h2><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 			
- 			<nav class="eightcol last">
+ 			<nav>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
  			</nav>
 
