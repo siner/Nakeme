@@ -1,55 +1,52 @@
-	<aside id="sidebar">
+	<section id="sidebar">
+
+		<?php if ( ! dynamic_sidebar( 'main-sidebar' ) ) : ?>
+
 		
-		<section class="search">
+		<aside class="search">
+			<h3><?php echo __('Search'); ?></h3>
 			<?php get_search_form(); ?>
-		</section><!-- .search -->
+		</aside><!-- .search -->
 
 		
-		<section class="categories">
-
+		<aside class="categories">
 			<h3><?php echo __('Categories'); ?></h3>
-
-			<nav class="categories">
+			<nav>
 				<ul>
 				<?php $categories = get_categories( ); foreach ($categories as $cat): ?>
 					<li><a href="<?php echo get_category_link( $cat->term_id ) ?>" class="<?php echo $cat->slug; ?>"><?php echo $cat->name; ?></a></li>		
 				<?php endforeach; ?>
 				</ul>
 			</nav>	
-
-		</section><!-- .categories -->
+		</aside><!-- .categories -->
 
 		
-		<section class="tags">
-
+		<aside class="tags">
 			<h3><?php echo __('Tags'); ?></h3>
-
-			<nav class="tags">
-
+			<nav>
 				<?php wp_tag_cloud(); ?>
-
 			</nav>	
-
-		</section><!-- .tags -->
+		</aside><!-- .tags -->
 
 		
-		<section class="links">
-
+		<aside class="links">
 			<h3><?php echo __('Links'); ?></h3>
-			
-			<ul>
-			<?php
-				$bookmarks = get_bookmarks( array(
-					'orderby'        => 'name',
-					'order'          => 'ASC',
-         ));
+			<nav>
+				<ul>
+				<?php
+					$bookmarks = get_bookmarks( array(
+						'orderby'        => 'name',
+						'order'          => 'ASC',
+	         ));
 
-				foreach ( $bookmarks as $bm ) { 
-   				 printf( '<li><a href="%s" title="%s">%s</a></li>', $bm->link_url, __($bm->link_name), __($bm->link_name) );
-				}
-			?>
-			</ul>
+					foreach ( $bookmarks as $bm ) { 
+	   				 printf( '<li><a href="%s" title="%s">%s</a></li>', $bm->link_url, __($bm->link_name), __($bm->link_name) );
+					}
+				?>
+				</ul>
+			</nav>
+		</aside><!-- .links -->
 
-		</section><!-- .links -->
+		<?php endif; // end sidebar widget area ?>
 		
-	</aside><!-- #sidebar -->
+	</section><!-- #sidebar -->

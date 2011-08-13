@@ -1,11 +1,13 @@
-<div id="loop">		
+<div id="content">		
 
 <?php if ( ! have_posts() ) : ?>
 	<article>
   	<header>
   		<h1>No encontrado</h1>
     </header>
+    <div class="text">
       <p>No aparece lo que buscas...</p>
+		</div>
 	</article>
 <?php endif; ?>
 
@@ -35,19 +37,23 @@
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header>
 	    <h2><a href="<?php the_permalink(); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>"><?php the_title(); ?></a></h2> 
-	    <?php echo get_the_date(); ?>, <?php comments_popup_link( '0 Comments' , '1 Comment' , '% Comments' ); ?>
+	    <p class="info"><?php echo get_the_date(); ?>, <?php comments_popup_link( '0 Comments' , '1 Comment' , '% Comments' ); ?></p>
 		</header>
-			<div class="content">
-			
+
+		<div class="text">
+					
 			<?php if(has_post_thumbnail()): ?>
 				<div class="thumb"><?php the_post_thumbnail('thumbnail'); ?></div>
 			<?php endif;?>
 	    
 	    <?php the_excerpt( 'Continue reading &rarr;' ); ?>             
-		</div>     
-		<div class="clear"></div>
+		</div><!-- .text -->     
+	
 	  <footer>
-	    <?php $tags_list = get_the_tag_list( '', ' ' ); if ( $tags_list ): echo __( 'Tags' , 'nakeme' ) . ': ' . $tags_list ; endif; ?>                          
+	    <nav class="tags">
+	    	<?php $tags_list = get_the_tag_list( '', ' ' ); if ( $tags_list ): echo __( 'Tags' , 'nakeme' ) . ': ' . $tags_list ; endif; ?>                          
+	  	</nav>
+			<?php edit_post_link( __( 'Edit', 'nakeme' ), '<p class="edit">', '</p>' ); ?>
 	  </footer>
 	</article>
 
@@ -60,4 +66,4 @@
 	</nav>
 
 
-</div><!-- #loop -->
+</div><!-- #content -->

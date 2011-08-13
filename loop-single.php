@@ -5,10 +5,8 @@
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 			<header>
-			
 				<h1><?php the_title(); ?></h1>
-				<?php echo get_the_date(); ?>, <?php comments_popup_link( 'Commment', '1 Comment', '% Comments' ); ?>
-			
+				<p class="info"><?php echo get_the_date(); ?>, <?php comments_popup_link( 'Commment', '1 Comment', '% Comments' ); ?></p>
 			</header>
  	
  			
@@ -18,7 +16,10 @@
 	
 			
 			<footer>
-        <?php $tags_list = get_the_tag_list( '', ' ' ); if ( $tags_list ): echo __('Tags').': '. $tags_list ; endif; ?>
+				<nav class="tags">
+        	<?php $tags_list = get_the_tag_list( '', ' ' ); if ( $tags_list ): echo __('Tags').': '. $tags_list ; endif; ?>
+				</nav>
+				<?php edit_post_link( __( 'Edit', 'nakeme' ), '<p class="edit">', '</p>' ); ?>
 			</footer>
 				
 		</article>

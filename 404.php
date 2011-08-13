@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div id="error404"> 
 
-	<div class="content">		
+	<div id="content">		
 
 		<article>
 
@@ -15,7 +15,7 @@
 
 		</article>
 
-	</div><!-- .content -->		
+	</div><!-- #content -->		
 
 	<?php get_sidebar(); ?>
 

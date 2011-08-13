@@ -10,6 +10,7 @@
 				<?php } else { ?>	
 					<h1><?php the_title(); ?></h1>
 				<?php } ?>
+				<p class="info"><?php echo get_the_date(); ?></p>
 			</header>				
 
 
@@ -19,7 +20,7 @@
 			
 												
 			<footer>			
-				<?php edit_post_link( __( 'Edit', 'nakeme' ), '', '' ); ?>
+				<?php edit_post_link( __( 'Edit', 'nakeme' ), '<p class="edit">', '</p>' ); ?>
 			</footer>
 			
 		</article>

@@ -2,34 +2,162 @@
 /* ----------------------------------------- */
 
 
+/* General styles */
 body {
 		
 }
 	
+	
+/* Container */
+#container{
+	
+}
 
 
+/* Header */
+#head{
+	
+}
 
-
-
+	#head hgroup{
+		
+	}
+	
+	#head hgroup h1{
+	
+	}
+	
+	#head hgroup h2{
+		
+	}
+	
+	#head nav{
+		
+	}
 
 
 /* Sections */
 
-.index{}
-.archive{}
-.category{}
-.tag{}
-.single{}
-.page{}
-.error404{}
-.author{}
+#index{}
+#archive{}
+#category{}
+#tag{}
+#single{}
+#page{}
+#error404{}
+#author{}
 
 
 
 
 
+/* Content */
 
 
+#content{
+	
+}
+
+	#content article{
+		
+	}
+		
+		/* The post header */
+		#content article header{
+		
+		}
+		
+			#content article header h1{
+				
+			}
+
+			#content article header .info{
+				
+			}
+
+		
+		
+		/* The post content */	
+		#content article .text{
+			
+		}
+
+
+		/* The content footer */
+		#content article footer{
+			
+		}
+
+			#content article footer .edit{
+			
+			}
+
+			#content article footer .tags{
+			
+			}
+
+
+/* Pagination */
+
+#pagination{
+		
+}
+	
+
+/* Sidebar */
+
+
+#sidebar{
+	
+}
+
+	#sidebar h3{
+		
+	}
+
+	#sidebar ul{
+	
+	}
+
+		#sidebar ul li{
+			
+		}
+		
+			#sidebar ul li a{
+				
+			}
+
+			#sidebar ul li a:hover{
+				
+			}
+
+
+
+
+	/* Custom sidebar */
+
+	#sidebar .search{
+		
+	}
+
+	#sidebar .categories{
+		
+	}
+
+	#sidebar .tags{
+		
+	}
+	
+	#sidebar .links{
+		
+	}
+	
+	
+#colophon{
+	
+}
+
+	
 
 
 /* Media queries

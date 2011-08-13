@@ -1,12 +1,16 @@
 /*
-	* Gridless version 2.0
-
-	* Credit is left inline and big thanks to Nicolas Gallagher and Jonathan Neal
-
-	* Across this document we use safe CSS hacks: http://mathiasbynens.be/notes/safe-css-hacks
-	* Selectors beggining with an underscore (_selector: property) target only IE6
-	* Selectors beggining with an asterisk (*selector: property) target only IE6 and IE7
+Theme Name: Nakeme
+Theme URI: http://www.franmoreno.com/nakeme
+Author: Fran Moreno
+Author URI: http://www.franmoreno.com
+Description: HTML5 naked theme for wordpress developers.
+Version: 0.1
+License: GNU General Public License
+License URI: license.txt
+Tags: Naked theme, developers, Gridless Boilerplate, HTML5
 */
+
+
 
 /* HTML5 display definitions
 ---------------------------------------- */

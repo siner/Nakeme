@@ -45,54 +45,35 @@ function remheadlink() {
 
 
 
-if ( ! function_exists( 'nakeme_posted_on' ) ) :
 /**
- * Prints HTML with meta information for the current post—date/time and author.
- *
+ *	The sidebar declarations
  */
-function nakeme_posted_on() {
-	printf( __( 'Posted on %2$s by %3$s', 'nakeme' ),
-		'meta-prep meta-prep-author',
-		sprintf( '<a href="%1$s" title="%2$s" rel="bookmark"><time datetime="%3$s" pubdate>%4$s</time></a>',
-			get_permalink(),
-			esc_attr( get_the_time() ),
-			get_the_date('Y-m-d'),
-			get_the_date()
-		),
-		sprintf( '<a href="%1$s" title="%2$s">%3$s</a>',
-			get_author_posts_url( get_the_author_meta( 'ID' ) ),
-			sprintf( esc_attr__( 'View all posts by %s', 'nakeme' ), get_the_author() ),
-			get_the_author()
-		)
-	);
-}
-endif;
+function nakeme_widgets_init() {
 
-if ( ! function_exists( 'nakeme_posted_in' ) ) :
-/**
- * Prints HTML with meta information for the current post (category, tags and permalink).
- *
- */
-function nakeme_posted_in() {
-	// Retrieves tag list of current post, separated by commas.
-	$tag_list = get_the_tag_list( '', ', ' );
-	if ( $tag_list ) {
-		$posted_in = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'nakeme' );
-	} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-		$posted_in = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'nakeme' );
-	} else {
-		$posted_in = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'nakeme' );
-	}
-	// Prints the string, replacing the placeholders.
-	printf(
-		$posted_in,
-		get_the_category_list( ', ' ),
-		$tag_list,
-		get_permalink(),
-		the_title_attribute( 'echo=0' )
-	);
+	register_sidebar( array(
+		'name' => __( 'Main Sidebar', 'nakeme' ),
+		'id' => 'main-sidebar',
+		'description' => __( 'The sidebar', 'nakeme' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer Sidebar', 'nakeme' ),
+		'id' => 'footer-sidebar',
+		'description' => __( 'The footer sidebar', 'nakeme' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => "</aside>",
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
+
 }
-endif;
+add_action( 'widgets_init', 'nakeme_widgets_init' );
+
+
 
 
 /**
@@ -102,6 +83,17 @@ function nakeme_remove_version() {
 	return '';
 }
 add_filter('the_generator', 'nakeme_remove_version');
+
+
+
+function nakeme_wp_nav_menu_args( $args = '' )
+{
+	$args['container'] = false;
+	return $args;
+} // function
+
+add_filter( 'wp_nav_menu_args', 'nakeme_wp_nav_menu_args' );
+
 
 
 

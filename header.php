@@ -72,8 +72,10 @@
         <h2><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 			
- 			<nav>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
- 			</nav>
+			<nav>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>		
+			</nav>
+
+
 
     </header>
