@@ -1,5 +1,6 @@
 <?php get_header(); ?>
-<div id="error404"> 
+
+<div class="error404">
 
 	<div id="content">		
 
@@ -19,6 +20,6 @@
 
 	<?php get_sidebar(); ?>
 
-</div><!-- #error404 -->
+</div>
 
 <?php get_footer(); ?>

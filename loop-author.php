@@ -1,10 +1,22 @@
-<section id="content">		
+<section id="content">
 
-
-	<?php if (! is_home()): ?>
-	 <h1><?php	echo nakeme_get_loop_title(); ?></h1>
+	<h1><?php	echo nakeme_get_loop_title(); ?></h1>
+		
+	<?php if ( get_the_author_meta( 'description' ) ) : ?>
+		<section class="author-info">
+			<figure>
+				<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'nakeme_author_bio_avatar_size', 60 ) ); ?>
+			</figure>
+	    
+	    <h2>
+	    	<?php printf( __( 'About %s', 'nakeme' ), get_the_author() ); ?>
+	    </h2>
+	    
+	    <p class="description"><?php the_author_meta( 'description' ); ?></p>
+		</section>
 	<?php endif; ?>
 	
+
 
 	<?php while ( have_posts() ) : the_post(); ?>
 

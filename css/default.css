@@ -38,14 +38,12 @@ body {
 
 /* Sections */
 
-#index{}
-#archive{}
-#category{}
-#tag{}
-#single{}
-#page{}
-#error404{}
-#author{}
+.index{}
+.archive{}
+.single{}
+.page{}
+.error404{}
+.author{}
 
 
 

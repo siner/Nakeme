@@ -79,7 +79,8 @@ add_action( 'widgets_init', 'nakeme_widgets_init' );
 /**
  * Removing the WP version
  */
-function nakeme_remove_version() {
+function nakeme_remove_version() 
+{
 	return '';
 }
 add_filter('the_generator', 'nakeme_remove_version');
@@ -93,6 +94,26 @@ function nakeme_wp_nav_menu_args( $args = '' )
 } // function
 
 add_filter( 'wp_nav_menu_args', 'nakeme_wp_nav_menu_args' );
+
+
+
+/**
+ * Get some loop information
+ */
+function nakeme_get_loop_title()
+{
+	if (is_category()) : $title = __( 'Category' , 'nakeme' ) . ' : ' . single_cat_title( '', false );
+	elseif (is_tag()) : $title = __( 'Tag' , 'nakeme' ) . ' : ' . single_tag_title( '', false);
+	elseif (is_month()) : $title = __( 'Monthly Archives' , 'nakeme' ) . ' : ' . get_the_date('F Y');
+	elseif (is_year()) : $title = __( 'Yearly Archives' , 'nakeme' ). ' : ' . get_the_date('Y');
+	elseif (is_search()) : $title = __( 'Search results for' , 'nakeme' ) . ' : ' . get_search_query();
+	elseif (is_author()) : $title = __( 'Author Archives', 'nakeme' ) . ' : ' . get_the_author();
+	elseif (is_archive()) : $title = __( 'Archive' , 'nakeme' );
+	endif;
+	
+	return $title;
+}
+
 
 
 
