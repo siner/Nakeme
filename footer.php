@@ -5,7 +5,7 @@
 			<p>HTML5 Naked WordPress Theme developed by <a href="http://www.franmoreno.com">Fran Moreno</a>, feel free to change everything, I don't mind ;)</p>
 		<?php	endif; ?>
 		
-		<nav>
+		<nav id="footer-navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>		
 		</nav>
 	</footer><!-- #colophon -->

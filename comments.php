@@ -19,7 +19,7 @@
 		</ul>
 	
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav>
+		<nav id="pagination">
 			<?php paginate_comments_links( ) ?>
 		</nav>
 		<?php endif; // check for comment navigation ?>

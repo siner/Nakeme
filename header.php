@@ -22,6 +22,7 @@
 	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/default.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/nakeme.css" type="text/css" media="screen" />	
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/print.css" type="text/css" media="print" />	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
  

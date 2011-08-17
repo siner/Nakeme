@@ -36,7 +36,7 @@
 
 	<?php /* The pagination*/ ?>
 	<nav id="pagination">
-	<?php echo paginate_links( ) ?>
+	<?php nakeme_paginate_links( ) ?>
 	</nav>
 
 

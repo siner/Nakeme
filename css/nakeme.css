@@ -10,7 +10,9 @@ body {
 	
 /* Container */
 #container{
-	
+	width: 960px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
 
@@ -35,10 +37,6 @@ body {
 		
 	}
 
-		#head nav ul{
-		
-		}
-
 
 /* Sections */
 
@@ -57,7 +55,9 @@ body {
 
 
 #content{
-	
+	width: 600px;
+	margin: 0 20px 0 0;
+	float: left;
 }
 
 	#content article{
@@ -110,7 +110,8 @@ body {
 
 
 #sidebar{
-	
+	width: 340px;
+	float: left;
 }
 
 	#sidebar h3{
@@ -156,9 +157,9 @@ body {
 	
 	
 #colophon{
-	
+	clear: both;	
 }
-
+	
 	#colophon nav{
 		
 	}
@@ -168,13 +169,13 @@ body {
 		}	
 		
 			#colophon nav ul li{
-
+				display: inline;
+				list-style: none;
 			}
 
 				#colophon nav ul li a{
 					
 				}
-
 
 /* Media queries
 ---------------------------------------- */
