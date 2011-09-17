@@ -15,7 +15,7 @@
 		</h3>
 	
 		<ul id="comment-list">
-			<?php wp_list_comments( array( 'style' => 'list') ); ?>
+			<?php wp_list_comments( array( 'style' => 'list', 'avatar_size' => 45) ); ?>
 		</ul>
 	
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>

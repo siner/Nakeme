@@ -164,6 +164,7 @@ a, a:visited, a:hover{ color: #444;}
 
 	/* Comment info */
 	#comments .comment-author{float: left; margin-bottom: 10px;}
+	#comments .comment-author img{ padding: 3px; border: solid 1px #ccc;}
 	#comments .comment-meta{float: right;}
 	#comments p{ clear: both;}
 	#comments .reply{text-align: right;}

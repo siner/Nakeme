@@ -96,6 +96,7 @@ body {}
 
 	/* Comment info */
 	#comments .comment-author{}
+	#comments .comment-author img{}
 	#comments .comment-meta{}
 	#comments p{}
 	#comments .reply{}
