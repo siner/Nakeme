@@ -1,16 +1,16 @@
-	<section id="sidebar">
+	<section id="sidebar" class="threecol last">
 
 		<?php if ( ! dynamic_sidebar( 'main-sidebar' ) ) : ?>
 
 		
 		<aside class="search">
-			<h3><?php echo __('Search'); ?></h3>
+			<h3><?php echo __( 'Search' , 'nakeme'); ?></h3>
 			<?php get_search_form(); ?>
 		</aside><!-- .search -->
 
 		
 		<aside class="categories">
-			<h3><?php echo __('Categories'); ?></h3>
+			<h3><?php echo __( 'Categories' , 'nakeme'); ?></h3>
 			<nav>
 				<ul>
 				<?php $categories = get_categories( ); foreach ($categories as $cat): ?>
@@ -22,7 +22,7 @@
 
 		
 		<aside class="tags">
-			<h3><?php echo __('Tags'); ?></h3>
+			<h3><?php echo __( 'Tags' , 'nakeme'); ?></h3>
 			<nav>
 				<?php wp_tag_cloud(); ?>
 			</nav>	
@@ -30,7 +30,7 @@
 
 		
 		<aside class="links">
-			<h3><?php echo __('Links'); ?></h3>
+			<h3><?php echo __( 'Links' , 'nakeme'); ?></h3>
 			<nav>
 				<ul>
 				<?php

@@ -1,16 +1,14 @@
 <?php get_header(); ?>
 
-<div class="error404">
+	<div id="content" class="ninecol">		
 
-	<div id="content">		
-
-		<article>
+		<article class="error404">
 
 			<header>        		
   	  	<h1><?php echo __('Not Found'); ?></h1>      
 			</header>
 
-      <div class="text">
+      <div class="thecontent">
       	<p><?php echo __('We can find what you are looking for... You can use the search bar or the menu'); ?></p>
 			</div>
 
@@ -19,7 +17,5 @@
 	</div><!-- #content -->		
 
 	<?php get_sidebar(); ?>
-
-</div>
 
 <?php get_footer(); ?>

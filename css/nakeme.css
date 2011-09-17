@@ -2,195 +2,124 @@
 /* ----------------------------------------- */
 
 
+/* Default Theme */
+/* ----------------------------------------- */
+
+
 /* General styles */
-body {
-		
-}
-	
+body {}
 	
 /* Container */
-#container{
-	width: 960px;
-	padding: 0 20px;
-	margin: 0 auto;
-}
+.container{}
 
 
 /* Header */
-#head{
-	
-}
-
-	#head hgroup{
-		
-	}
-	
-	#head hgroup h1{
-	
-	}
-	
-	#head hgroup h2{
-		
-	}
-	
-	#head nav{
-		
-	}
+#head{}
+#head hgroup{}
+#head hgroup h1{}	
+#head hgroup h2{}
+#head nav{}
+#head nav ul{}
 
 
-/* Sections */
+/* Center section */
+#center{}
+
+
+/* Main Content */
+#content{}
+#content article{}
+
+	/* The post header */
+	#content article header{}	
+	#content article header h1{}
+	#content article header .info{}
+
+		
+		
+	/* The post content */	
+	#content article .thecontent{}
+
+	/* The content footer */
+	#content article footer{}
+	#content article footer .edit{}
+	#content article footer .categories{}
+	#content article footer .tags{}
+
+
+/* Pagination */
+
+#pagination{}
+#pagination .next, #pagination .previous{}
+#pagination .current{}
+#pagination a{}
+#pagination a:hover{}
+
+
+/* Comments section in single */
+
+#comments{}
+#comments h3{}
+
+
+	/* Comment list */
+	#comments li{}
+	#comments li.even{}
+	#comments li.odd{}
+	#comments li.depth-1{}
+	#comments li.depth-2{}
+	#comments li.depth-3{}
+	#comments li.depth-4{}
+	#comments li.depth-5{}
+	
+	/* Comment info */
+	#comments .comment-author{}
+	#comments .comment-meta{}
+	#comments p{}
+	#comments .reply{}
+	
+	/* Comment form */
+	#respond p{}
+	#respond .required{}
+	#respond input{}
+	#respond textarea{}
+	#respond #submit{}
+	#respond .form-allowed-tags{}
+
+
+/* Sidebar */
+#sidebar{}
+#sidebar aside{}
+#sidebar h3{}
+#sidebar ul{}
+#sidebar ul li{}
+#sidebar ul li a{}
+#sidebar ul li a:hover{}
+
+	/* Custom sidebar sections */
+
+	#sidebar .search{}
+	#sidebar .categories{}
+	#sidebar .tags{}
+	#sidebar .links{}
+	
+
+/* Footer */
+	
+#colophon{}
+#colophon section{}
+
+
+
+
+/* Custom sections */
 
 .index{}
 .archive{}
 .single{}
 .page{}
 .error404{}
-.author{}
+.author{}	
 
 
-
-
-
-/* Content */
-
-
-#content{
-	width: 600px;
-	margin: 0 20px 0 0;
-	float: left;
-}
-
-	#content article{
-		
-	}
-		
-		/* The post header */
-		#content article header{
-		
-		}
-		
-			#content article header h1{
-				
-			}
-
-			#content article header .info{
-				
-			}
-
-		
-		
-		/* The post content */	
-		#content article .text{
-			
-		}
-
-
-		/* The content footer */
-		#content article footer{
-			
-		}
-
-			#content article footer .edit{
-			
-			}
-
-			#content article footer .tags{
-			
-			}
-
-
-/* Pagination */
-
-#pagination{
-		
-}
-	
-
-/* Sidebar */
-
-
-#sidebar{
-	width: 340px;
-	float: left;
-}
-
-	#sidebar h3{
-		
-	}
-
-	#sidebar ul{
-	
-	}
-
-		#sidebar ul li{
-			
-		}
-		
-			#sidebar ul li a{
-				
-			}
-
-			#sidebar ul li a:hover{
-				
-			}
-
-
-
-
-	/* Custom sidebar */
-
-	#sidebar .search{
-		
-	}
-
-	#sidebar .categories{
-		
-	}
-
-	#sidebar .tags{
-		
-	}
-	
-	#sidebar .links{
-		
-	}
-	
-	
-#colophon{
-	clear: both;	
-}
-	
-	#colophon nav{
-		
-	}
-
-		#colophon nav ul{
-		
-		}	
-		
-			#colophon nav ul li{
-				display: inline;
-				list-style: none;
-			}
-
-				#colophon nav ul li a{
-					
-				}
-
-/* Media queries
----------------------------------------- */
-
-/* The media queries included in here are only placeholder. Modify them as your content requires */
-
-@media only screen and (min-width: 480px) {
-	/* Wide mobile (480px+) styles go here */
-}
-
-@media only screen and (min-width: 768px) { 
-	/* Tablets/netbooks (768px+) styles go here */
-}
-
-@media only screen and (min-width: 1024px) { 
-	/* Desktops (1024px+) styles go here */
-}
 

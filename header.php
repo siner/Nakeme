@@ -20,11 +20,14 @@
  </title>
 
 	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
+
+
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/normalize.css" type="text/css" media="all" />	
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/1140.css" type="text/css" media="all" />	
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/default.css" type="text/css" media="screen" />	
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/nakeme.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/nakeme.css" type="text/css" media="all" />	
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/responsive.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/print.css" type="text/css" media="print" />	
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
  
 
 	<!-- !LEGACY -->
@@ -63,20 +66,23 @@
  
 <body <?php body_class(); ?>>
 
-	<div id="container">
+	<div class="container">
 	
 		
-		<header id="head">
+		<header id="head" class="row">
 	
-			<hgroup>
+			<hgroup class="eightcol">
        	<h1 class="header-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
         <h2 class="header-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 			
-			<nav>
+			<nav class="fourcol last">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>		
 			</nav>
 
-
-
-    </header>
+    </header><!-- #head -->
+    
+    
+		<div id="center" class="row">
+		
+		

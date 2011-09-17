@@ -1,16 +1,18 @@
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<div id="content" class="ninecol page">	
 
-	<div id="content" class="page">	
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 			<header>
 				<h1><?php the_title(); ?></h1>
-				<p class="info"><?php echo get_the_date(); ?></p>
+				<section class="info">
+					<?php echo get_the_date(); ?>
+				</section>
 			</header>				
 
 
-			<div id="text">
+			<div class="thecontent">
 				<?php the_content(); ?>			
 			</div>
 			
@@ -23,6 +25,6 @@
 
 		<?php comments_template( '', true ); ?>
 
-	</div><!-- #content -->
-
 <?php endwhile; ?>
+
+</div><!-- #content -->

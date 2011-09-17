@@ -24,7 +24,6 @@ function nakeme_setup() {
 
 	register_nav_menus( array(
 		'primary' => 'Header navigation',
-		'secondary' => 'Footer navigation',
 	) );
 }
 endif;
@@ -60,15 +59,6 @@ function nakeme_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
-	register_sidebar( array(
-		'name' => __( 'Footer Sidebar', 'nakeme' ),
-		'id' => 'footer-sidebar',
-		'description' => __( 'The footer sidebar', 'nakeme' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
-		'before_title' => '<h3>',
-		'after_title' => '</h3>',
-	) );
 
 }
 add_action( 'widgets_init', 'nakeme_widgets_init' );
@@ -125,7 +115,7 @@ if ( !function_exists('AddThumbColumn') && function_exists('add_theme_support') 
     // for post and page
     add_theme_support('post-thumbnails', array( 'post', 'page' ) );
     function AddThumbColumn($cols) {
-        $cols['thumbnail'] = __('Thumbnail');
+        $cols['thumbnail'] = __('Thumbnail', 'nakeme');
         return $cols;
     }
     function AddThumbValue($column_name, $post_id) {

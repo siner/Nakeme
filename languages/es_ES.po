@@ -1,0 +1,138 @@
+# This file is distributed under the same license as the Nakeme Theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Nakeme 1.0\n"
+"Report-Msgid-Bugs-To: http://www.franmoreno.com/nakeme\n"
+"POT-Creation-Date: 2011-09-17 15:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2011-09-17 16:24+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: 404.php:8
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: 404.php:12
+msgid "We can find what you are looking for... You can use the search bar or the menu"
+msgstr "No podemos encontrar lo que buscas, prueba usando la barra de búsqueda o el menú."
+
+#: comments.php:5
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "El post está protegido por contraseña. Introduce la tuya para poder ver los comentarios."
+
+#: comments.php:14
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comment on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un comentario en &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
+
+#: comments.php:30
+msgid "Comments are closed."
+msgstr "Los comentarios están cerrados"
+
+#: functions.php:53
+msgid "Main Sidebar"
+msgstr "Barra lateral principal"
+
+#: functions.php:55
+msgid "The sidebar"
+msgstr "Barra lateral"
+
+#: functions.php:95
+msgid "Category"
+msgstr "Categoría"
+
+#: functions.php:96
+msgid "Tag"
+msgstr "Etiqueta"
+
+#: functions.php:97
+msgid "Monthly Archives"
+msgstr "Archivo mensual"
+
+#: functions.php:98
+msgid "Yearly Archives"
+msgstr "Archivo anual"
+
+#: functions.php:99
+msgid "Search results for"
+msgstr "Resultado de buscar"
+
+#: functions.php:100
+msgid "Author Archives"
+msgstr "Archivo del autor"
+
+#: functions.php:101
+msgid "Archive"
+msgstr "Archivo"
+
+#: header.php:18
+msgid "Page %s"
+msgstr "Página %s"
+
+#: loop-author.php:12
+msgid "About %s"
+msgstr "Acerca de %s"
+
+#: loop-author.php:27
+#: loop-single.php:10
+#: loop.php:15
+msgid "Posted by"
+msgstr "Escrito por"
+
+#: loop-author.php:29
+#: loop-single.php:12
+#: loop.php:18
+msgid "Comment"
+msgstr "Comentar"
+
+#: loop-author.php:29
+#: loop-single.php:12
+#: loop.php:18
+msgid "1 Comment"
+msgstr "1 comentario"
+
+#: loop-author.php:29
+#: loop-single.php:12
+#: loop.php:18
+msgid "% Comments"
+msgstr "% comentarios"
+
+#: loop-author.php:39
+#: loop.php:27
+msgid "Continue reading &rarr;"
+msgstr "Seguir leyendo &rarr;"
+
+#: loop-author.php:44
+#: loop-single.php:22
+#: loop.php:44
+#: sidebar.php:13
+msgid "Categories"
+msgstr "Categorías"
+
+#: loop-author.php:49
+#: loop-single.php:27
+#: loop.php:49
+#: sidebar.php:25
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: loop-author.php:52
+#: loop-page.php:21
+#: loop-single.php:30
+#: loop.php:52
+msgid "Edit"
+msgstr "Editar"
+
+#: sidebar.php:7
+msgid "Search"
+msgstr "Buscar"
+
+#: sidebar.php:33
+msgid "Links"
+msgstr "Enlaces"
+

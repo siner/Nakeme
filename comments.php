@@ -2,7 +2,7 @@
 
 	<?php /* Important, do not delete */ ?>
 	<?php if ( post_password_required() ) : ?>
-		<p><?php _e( 'This post is password protected. Enter the password to view any comments.', 'starkers' ); ?></p>
+		<p><?php _e( 'This post is password protected. Enter the password to view any comments.', 'nakeme' ); ?></p>
 	<?php return; endif; ?>
 	<?php /* You can edit after this comment */ ?>
 	
@@ -11,7 +11,7 @@
 	<?php if ( have_comments() ) : ?>
 	
 		<h3 id="comments-title">
-			<?php printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'nakeme' ), number_format_i18n( get_comments_number() ), '' . get_the_title() . '' ); ?>
+			<?php printf( _n( 'One comentario to %2$s', '%1$s comentarios to %2$s', get_comments_number(), 'nakeme' ), number_format_i18n( get_comments_number() ), '' . get_the_title() . '' ); ?>
 		</h3>
 	
 		<ul id="comment-list">
