@@ -18,22 +18,30 @@ Tags: Naked theme, developers, Gridless Boilerplate, HTML5
 
 /* General styles */
 body {}
+
+
 	
 /* Container */
 .container{}
 
 
+
 /* Header */
 #head{}
 #head hgroup{}
-#head hgroup h1{}	
+#head hgroup h1{}
+#head hgroup h1 a{}	
 #head hgroup h2{}
+
 #head nav{}
 #head nav ul{}
-
+#head nav ul li{}
+#head nav ul li a{} 
+#head nav ul li a:hover{}
 
 /* Center section */
-#center{}
+#center{
+}
 
 
 /* Main Content */
@@ -42,13 +50,17 @@ body {}
 
 	/* The post header */
 	#content article header{}	
-	#content article header h1{}
+	#content article header a{}
+
+	#content article header h1,
+	#content article header h2 a{}
 	#content article header .info{}
 
 		
 		
 	/* The post content */	
 	#content article .thecontent{}
+	#content article .thecontent p{}
 
 	/* The content footer */
 	#content article footer{}
@@ -73,28 +85,30 @@ body {}
 
 
 	/* Comment list */
-	#comments li{}
-	#comments li.even{}
-	#comments li.odd{}
-	#comments li.depth-1{}
-	#comments li.depth-2{}
-	#comments li.depth-3{}
-	#comments li.depth-4{}
-	#comments li.depth-5{}
-	
+	#comments li .comment-body{}
+	#comments li.even > .comment-body{}
+	#comments li.odd > .comment-body{}
+	#comments li.depth-1 .comment-body{}
+	#comments li.depth-2 .comment-body{}
+	#comments li.depth-3 .comment-body{}
+	#comments li.depth-4 .comment-body{}
+	#comments li.depth-5 .comment-body{}
+
 	/* Comment info */
 	#comments .comment-author{}
 	#comments .comment-meta{}
 	#comments p{}
 	#comments .reply{}
-	
+
 	/* Comment form */
 	#respond p{}
+	#respond label{}
 	#respond .required{}
-	#respond input{}
-	#respond textarea{}
+	#respond input, #respond textarea{}
 	#respond #submit{}
+	#respond textarea{}
 	#respond .form-allowed-tags{}
+
 
 
 /* Sidebar */
@@ -109,15 +123,21 @@ body {}
 	/* Custom sidebar sections */
 
 	#sidebar .search{}
+	#sidebar .search h3{}
+	#sidebar .search #s{}
+	#sidebar .search #searchsubmit{}
 	#sidebar .categories{}
 	#sidebar .tags{}
+	#sidebar .tags nav{}
+	#sidebar .tags a{}
+	#sidebar .tags a:hover{}
 	#sidebar .links{}
 	
 
 /* Footer */
 	
 #colophon{}
-#colophon section{}
+#colophon section .content{}
 
 
 
@@ -129,5 +149,7 @@ body {}
 .single{}
 .page{}
 .error404{}
-.author{}
+.author{}	
+
+
 

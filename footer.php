@@ -2,15 +2,15 @@
 	
 	<footer id="colophon" class="row">
 		<section class="fourcol">
-			<p>HTML5 Naked WordPress Theme</p>
+			<div class="content">HTML5 Naked WordPress Theme</div>
 		</section>
 
 		<section class="fourcol">
-			<p>Developed by <a href="http://www.franmoreno.com">Fran Moreno</a></p>
+			<div class="content">Developed by <a href="http://www.franmoreno.com">Fran Moreno</a></div>
 		</section>
 
 		<section class="fourcol last">
-			<p>Feel free to change everything, I don't mind ;)</p>
+			<div class="content">Feel free to change everything, I don't mind ;)</div>
 		</section>
 
 	</footer><!-- #colophon -->

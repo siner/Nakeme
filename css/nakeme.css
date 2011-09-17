@@ -2,112 +2,265 @@
 /* ----------------------------------------- */
 
 
-/* Default Theme */
-/* ----------------------------------------- */
-
-
 /* General styles */
-body {}
+body {
+	color: #444;
+  background: #fcfcfc;
+}
+
+a, a:visited, a:hover{ color: #444;}
+
+
 	
 /* Container */
 .container{}
 
+.row{}
+
+
 
 /* Header */
-#head{}
-#head hgroup{}
-#head hgroup h1{}	
-#head hgroup h2{}
-#head nav{}
-#head nav ul{}
+#head{margin-bottom:10px;}
+#head hgroup{ }
+#head hgroup h1{}
+#head hgroup h1 a{
+	text-decoration: none;
+	font-size: 50px;
+	line-height: 60px;
+	color: #999;
+}	
+#head hgroup h2{ color: #aaa; line-height: 30px;}
 
+#head nav{
+	background: #eee;
+	border-top: solid 2px #ccc;
+	border-bottom: solid 2px #ccc;
+}
+#head nav ul{}
+#head nav ul li{ 
+	display: block; 
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+#head nav ul li a{
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: #444;
+} 
+#head nav ul li a:hover{
+	color: #fff;
+	background: #666;
+}
 
 /* Center section */
-#center{}
+#center{
+}
 
 
 /* Main Content */
 #content{}
-#content article{}
+#content article{
+	margin: 0 0 20px 0;
+}
 
 	/* The post header */
-	#content article header{}	
-	#content article header h1{}
+	#content article header{
+		background: #444;
+		color: #ccc;
+		padding: 5px;
+	}	
+	#content article header a{
+		color: #fff;
+	}
+
+	#content article header h1,
+	#content article header h2 a{
+		color: #fff;
+	}
 	#content article header .info{}
 
 		
 		
 	/* The post content */	
-	#content article .thecontent{}
+	#content article .thecontent{
+		line-height: 18px;
+	}
+	#content article .thecontent p{
+		margin: 5px 0;
+	}
 
 	/* The content footer */
-	#content article footer{}
-	#content article footer .edit{}
+	#content article footer{
+		position: relative;
+		border-top: solid 4px #ccc;
+		margin: 20px 0;
+		padding: 10px 50px 0 0;
+	}
+	#content article footer .edit{
+		position: absolute;
+		right: 5px;
+		bottom: 5px;
+	}
 	#content article footer .categories{}
 	#content article footer .tags{}
 
 
 /* Pagination */
 
-#pagination{}
-#pagination .next, #pagination .previous{}
-#pagination .current{}
-#pagination a{}
-#pagination a:hover{}
+#pagination{
+	margin: 10px 0;
+	height: 30px;
+}
+	
+#pagination .previous ,
+#pagination .next {
+	font-weight:bold;
+	border:solid 1px #ccc;
+}
+
+#pagination .current{
+	font-weight:bold;
+	display:block;
+	float:left;
+	padding:4px 6px;
+}
+
+#pagination a{
+	border: solid 1px #ccc;
+	margin-right:2px;
+	color:#444;
+	display:block;
+	float:left;
+	padding:3px 6px;
+	text-decoration:none;
+}
+#pagination a:hover{
+	background: #444;
+	color: #fff;
+}
 
 
 /* Comments section in single */
 
 #comments{}
-#comments h3{}
+#comments h3{
+	background: #444; 
+	color: #fff;
+	padding: 5px;
+}
 
 
 	/* Comment list */
-	#comments li{}
-	#comments li.even{}
-	#comments li.odd{}
-	#comments li.depth-1{}
-	#comments li.depth-2{}
-	#comments li.depth-3{}
-	#comments li.depth-4{}
-	#comments li.depth-5{}
-	
+	#comments li .comment-body{clear: both; padding: 10px;}
+	#comments li.even > .comment-body{background: #fff;}
+	#comments li.odd > .comment-body{background: #efefef;}
+	#comments li.depth-1 .comment-body{border-left: solid 4px #666;}
+	#comments li.depth-2 .comment-body{margin-left: 30px;border-left: solid 4px #888;}
+	#comments li.depth-3 .comment-body{margin-left: 60px;border-left: solid 4px #aaa;}
+	#comments li.depth-4 .comment-body{margin-left: 90px;border-left: solid 4px #ddd;}
+	#comments li.depth-5 .comment-body{margin-left: 120px;border-left: solid 4px #eee;}
+
 	/* Comment info */
-	#comments .comment-author{}
-	#comments .comment-meta{}
-	#comments p{}
-	#comments .reply{}
-	
+	#comments .comment-author{float: left; margin-bottom: 10px;}
+	#comments .comment-meta{float: right;}
+	#comments p{ clear: both;}
+	#comments .reply{text-align: right;}
+
 	/* Comment form */
-	#respond p{}
-	#respond .required{}
-	#respond input{}
-	#respond textarea{}
-	#respond #submit{}
-	#respond .form-allowed-tags{}
+	#respond p{padding: 10px 0;}
+	#respond label{float: left;}
+	#respond .required{float: left;}
+	#respond input, #respond textarea{float: right; border: solid #ccc 1px; width: 500px;}
+	#respond #submit{background: #444; color: #fff; padding: 5px;}
+	#respond textarea{width: 498px;}
+	#respond .form-allowed-tags{ width: 500px; float: right;}
+
 
 
 /* Sidebar */
 #sidebar{}
-#sidebar aside{}
-#sidebar h3{}
+#sidebar aside{
+	margin: 0 0 20px 0;
+}
+#sidebar h3{ 
+	background: #444; 
+	color: #fff;
+	padding: 5px;
+}
 #sidebar ul{}
-#sidebar ul li{}
-#sidebar ul li a{}
-#sidebar ul li a:hover{}
+#sidebar ul li{
+	border-bottom: solid 1px #ccc;
+}
+#sidebar ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	color: #444;
+}
+#sidebar ul li a:hover{
+	color: #fff;
+	background: #aaa;
+}
 
 	/* Custom sidebar sections */
 
-	#sidebar .search{}
+	#sidebar .search{position: relative;}
+	#sidebar .search h3{display: none;}
+	#sidebar .search #s{
+		margin-top: 5px;
+		width: 98.5%;
+		height: 30px;
+		border: solid 1px #ccc;
+		line-height: 30px;
+		font-size: 22px;
+	}
+	#sidebar .search #searchsubmit{
+		width: 38px;
+		height: 24px;
+		display: block;
+		border: none;
+		position: absolute;
+		margin-top: -30px;
+		right: 2px;
+		background: url(../img/nakeme/search.png) no-repeat left top;
+		text-indent: -999999px;
+	}
 	#sidebar .categories{}
 	#sidebar .tags{}
+	#sidebar .tags nav{
+		margin-top: 5px;
+	}
+	#sidebar .tags a{
+		display: inline-block;
+		vertical-align: top;
+		*display: inline;
+		zoom: 1;
+		border: solid 1px #ccc;
+		padding: 3px 5px;
+		color: #444;
+		text-decoration: none;
+		margin: 0 0 5px 0;
+	}
+	#sidebar .tags a:hover{
+		background: #444;
+		color: #fff;
+	}
 	#sidebar .links{}
 	
 
 /* Footer */
 	
-#colophon{}
-#colophon section{}
+#colophon{
+	margin-top: 20px;
+	background: #eee;
+	border-top: solid 2px #ccc;
+	border-bottom: solid 2px #ccc;
+}
+#colophon section .content{
+	padding: 10px;
+}
 
 
 
