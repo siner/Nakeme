@@ -32,6 +32,17 @@
 	
 	<?php endif; // end have_comments() ?>
 	
-	<?php comment_form(); ?>
+	
+	<?php
+		
+	$fields =  array(
+		'author' => '<p class="comment-form-author"><input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" placeholder="' . __( 'Name' ) . '" '. ( $req ? 'required' : '' ) . ' /></p>',
+		'email'  => '<p class="comment-form-email"><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" placeholder="' . __( 'Email' ) . '" '. ( $req ? 'required' : '' ) . ' /></p>',
+		'url'    => '<p class="comment-form-url"><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="' . __( 'Website' ) . '" /></p>',
+	); 
+	$comment_field = '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="'. _x( 'Comment', 'noun' ) . '" required></textarea></p>';
+	?>
+	
+	<?php comment_form(array('fields' => $fields , 'comment_field' => $comment_field)); ?>
 
 </section><!-- #comments -->

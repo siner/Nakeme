@@ -173,11 +173,10 @@ a, a:visited, a:hover{ color: #444;}
 	#respond p{padding: 10px 0;}
 	#respond label{float: left;}
 	#respond .required{float: left;}
-	#respond input, #respond textarea{float: right; border: solid #ccc 1px; width: 500px;}
-	#respond #submit{background: #444; color: #fff; padding: 5px;}
-	#respond textarea{width: 498px;}
-	#respond .form-allowed-tags{ width: 500px; float: right;}
-
+	#respond input, #respond textarea{float: right; border: solid #ccc 1px;  width: 98%; height: 30px; line-height: 30px; color: #444; padding: 5px;}
+	#respond #submit{background: #444; border: solid 1px #444; color: #fff; width: 99.6%; height: 40px;}
+	#respond textarea{width: 97.8%; height: 200px;}
+	#respond .form-allowed-tags{ width: 98%;}
 
 
 /* Sidebar */
