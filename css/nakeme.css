@@ -86,7 +86,15 @@ a, a:visited, a:hover{ color: #444;}
 	/* The post content */	
 	#content article .thecontent{
 		line-height: 18px;
+		padding: 20px 0 0 0;
 	}
+	
+	#content article .thecontent .thumb{
+		width: 150px;
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+	
 	#content article .thecontent p{
 		margin: 5px 0;
 	}
@@ -97,6 +105,7 @@ a, a:visited, a:hover{ color: #444;}
 		border-top: solid 4px #ccc;
 		margin: 20px 0;
 		padding: 10px 50px 0 0;
+		clear: both;
 	}
 	#content article footer .edit{
 		position: absolute;
