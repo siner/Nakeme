@@ -78,16 +78,64 @@ a, a:visited, a:hover{ color: #444;}
 	#content article header h1,
 	#content article header h2 a{
 		color: #fff;
+		text-decoration: none;
+		line-height: 40px;
 	}
 	#content article header .info{}
-
-		
 		
 	/* The post content */	
 	#content article .thecontent{
 		line-height: 18px;
 		padding: 20px 0 0 0;
 	}
+
+	#content article .thecontent h1{font-size: 2em; line-height: 2.4em;}
+	#content article .thecontent h2{font-size: 1.8em; line-height: 2.2em;}
+	#content article .thecontent h3{font-size: 1.6em; line-height: 2em;}
+	#content article .thecontent h4{font-size: 1.4em; line-height: 1.8em;}
+	#content article .thecontent h5{font-size: 1.2em; line-height: 1.6em;}
+	#content article .thecontent h6{font-size: 1em; line-height: 1.4em;}
+
+
+	#content article .thecontent h1,
+	#content article .thecontent h2,
+	#content article .thecontent h3,
+	#content article .thecontent h4,
+	#content article .thecontent h5,
+	#content article .thecontent h6{
+		clear: both;
+	}
+
+	#content article .thecontent cite{
+		color: #555;
+	}
+	
+	#content article .thecontent blockquote{
+		background: #eee;
+		padding: 5px;
+		font-style: italic;
+		clear: both;
+	}
+	
+	#content article .thecontent img{
+		padding: 10px;
+	}
+
+
+	#content article .thecontent ul, #content article .thecontent ol{
+		margin: 20px;
+		clear: both;
+	}
+	#content article .thecontent ul li{
+		list-style: disc;
+		margin-left: 20px;
+	}
+
+	#content article .thecontent ol li{
+		list-style: decimal;
+		margin-left: 20px;
+	}
+
 	
 	#content article .thecontent .thumb{
 		width: 150px;
