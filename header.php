@@ -51,7 +51,7 @@
 <!-- The google analytics script -->
  	<script type="text/javascript">
 	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-718520-22']); /* Change the value to your own */
+	  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']); /* Change the value to your own */
 	  _gaq.push(['_trackPageview']);
 	
 	  (function() {
