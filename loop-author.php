@@ -1,7 +1,6 @@
 <section id="content" class="ninecol">
 
-	<?php while ( have_posts() ) : the_post(); ?>
-
+	
 	<h1><?php	echo nakeme_get_loop_title(); ?></h1>
 		
 	<?php if ( get_the_author_meta( 'description' ) ) : ?>
@@ -17,6 +16,10 @@
 	    <p class="description"><?php the_author_meta( 'description' ); ?></p>
 		</section>
 	<?php endif; ?>
+	
+	<?php while ( have_posts() ) : the_post(); ?>
+
+	
 
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

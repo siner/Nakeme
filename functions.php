@@ -92,12 +92,14 @@ add_filter( 'wp_nav_menu_args', 'nakeme_wp_nav_menu_args' );
  */
 function nakeme_get_loop_title()
 {
+	$curauth = (get_query_var('author_name')) ? get_user_by('slug', get_query_var('author_name')) : get_userdata(get_query_var('author'));
+
 	if (is_category()) : $title = __( 'Category' , 'nakeme' ) . ' : ' . single_cat_title( '', false );
 	elseif (is_tag()) : $title = __( 'Tag' , 'nakeme' ) . ' : ' . single_tag_title( '', false);
 	elseif (is_month()) : $title = __( 'Monthly Archives' , 'nakeme' ) . ' : ' . get_the_date('F Y');
 	elseif (is_year()) : $title = __( 'Yearly Archives' , 'nakeme' ). ' : ' . get_the_date('Y');
 	elseif (is_search()) : $title = __( 'Search results for' , 'nakeme' ) . ' : ' . get_search_query();
-	elseif (is_author()) : $title = __( 'Author Archives', 'nakeme' ) . ' : ' . get_the_author();
+	elseif (is_author()) : $title = __( 'Author Archives', 'nakeme' ) . ' : ' . $curauth->display_name;
 	elseif (is_archive()) : $title = __( 'Archive' , 'nakeme' );
 	endif;
 	

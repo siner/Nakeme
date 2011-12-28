@@ -140,7 +140,7 @@ a, a:visited, a:hover{ color: #444;}
 	#content article .thecontent .thumb{
 		width: 150px;
 		float: left;
-		margin: 0 10px 10px 0;
+		margin: 0 20px 20px 0;
 	}
 	
 	#content article .thecontent p{
@@ -238,7 +238,7 @@ a, a:visited, a:hover{ color: #444;}
 
 /* Sidebar */
 #sidebar{}
-#sidebar aside{
+#sidebar nav{
 	margin: 0 0 20px 0;
 }
 #sidebar h3{ 
@@ -280,14 +280,14 @@ a, a:visited, a:hover{ color: #444;}
 		border: none;
 		position: absolute;
 		margin-top: -30px;
-		right: 2px;
+		right: 5px;
 		background: url(../img/nakeme/search.png) no-repeat left top;
 		text-indent: -999999px;
 	}
 	#sidebar .categories{}
 	#sidebar .tags{}
-	#sidebar .tags nav{
-		margin-top: 5px;
+	#sidebar .tags h3{
+		margin-bottom: 5px;
 	}
 	#sidebar .tags a{
 		display: inline-block;

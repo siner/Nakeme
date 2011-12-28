@@ -1,35 +1,23 @@
 /* ==|== media queries ====================================================== */
 
+@media only screen and (max-width: 768px) {
+
+	#head nav{ height: 35px;}
+	#content{ padding-bottom: 50px; border-bottom: 4px solid #bcbcbc; margin-bottom: 20px;}	
+	#content > h1{line-height: 50px;}
+	#sidebar .search #s{	width: 97%;}
+	#sidebar nav{width: 48%; display: block; float: left;margin-left: 1%; margin-right: 1%;}
+	#sidebar .search{width: 100%; float: none;}
+	.thecontent .thumb{display: none;}
+}
+
 @media only screen and (max-width: 480px) {
 
 	#head hgroup h1 a{ font-size: 37px; line-height: 45px;}
 	#head hgroup h2{ font-size: 20px; line-height: 30px;}
-
-	#content{
-		padding-bottom: 50px;
-		border-bottom: 4px solid #bcbcbc;
-		margin-bottom: 20px;
-	}	
-	
-	#content > h1{line-height: 50px;}
-	
 	#sidebar .search #s{	width: 91.2%;}
-	
+	#sidebar nav{width: 100%; float: none;}
 }
 
-@media only screen and (max-width: 768px) {
 
-	#head nav{
-		height: 35px;
-	}
-
-	#content{
-		padding-bottom: 50px;
-		border-bottom: 4px solid #bcbcbc;
-		margin-bottom: 20px;
-	}	
-	#content > h1{line-height: 50px;}
-	#sidebar .search #s{	width: 96.8%;}
-
-}
 
