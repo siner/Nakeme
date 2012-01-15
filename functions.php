@@ -177,7 +177,9 @@ function nakeme_paginate_links()
 
 }
 
-
+/**
+ * Search Form
+ */
 function nakeme_search_form( $form ) {
 
     $form = '
@@ -191,4 +193,34 @@ function nakeme_search_form( $form ) {
 }
 
 add_filter( 'get_search_form', 'nakeme_search_form' );
+
+
+
+/**
+ * Creating Theme Admin page 
+ */
+function nakeme_settings_init(){
+	register_setting( 'theme_settings', 'theme_settings' );
+}
+
+function nakeme_add_settings_page() {
+	add_menu_page( __( 'Nakeme Theme Settings' ), __( 'Nakeme Theme Settings' ), 'manage_options', 'settings', 'nakeme_settings_page');
+}
+
+add_action( 'admin_init', 'nakeme_settings_init' );
+add_action( 'admin_menu', 'nakeme_add_settings_page' );
+
+function nakeme_settings_page() {
+?>
+	<div>
+		<div id="icon-options-general"></div>
+		<h2><?php _e( 'Nakeme Theme Options' ) ?></h2>
+		<p><span>Version 1.0</span></p>
+		<div>
+			<p>This theme was made by <a title="Fran Moreno" href="http://www.franmoreno.com" target="_blank" >Fran Moreno</a>.</p>
+		</div>
+	</div>
+<?php
+}
+
 
