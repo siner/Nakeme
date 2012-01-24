@@ -53,8 +53,8 @@ function nakeme_widgets_init() {
 		'name' => __( 'Main Sidebar', 'nakeme' ),
 		'id' => 'main-sidebar',
 		'description' => __( 'The sidebar', 'nakeme' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => "</aside>",
+		'before_widget' => '<nav id="%1$s" class="widget %2$s">',
+		'after_widget' => "</nav>",
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	) );
@@ -174,7 +174,6 @@ function nakeme_paginate_links()
 		$pagination['add_args'] = array( 's' => get_query_var( 's' ) );
 
 	echo paginate_links( $pagination );
-
 }
 
 /**
