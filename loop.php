@@ -32,13 +32,14 @@
 	  	</nav>
 
 	    <?php $tags_list = get_the_tag_list( '', ' ' ); ?>
-		<?phpif ( $tags_list ): ?>
+	
+			<?php if ( $tags_list ): ?>
 
 	    <nav class="tags">
 	    	<?php echo __( 'Tags' , 'nakeme' ) . ': ' . $tags_list ; ?>                          
 	  	</nav>
 
-		<?php endif; ?>
+			<?php endif; ?>
 
 		<?php edit_post_link( __( 'Edit', 'nakeme' ), '<p class="edit">', '</p>' ); ?>
 	  </footer>
