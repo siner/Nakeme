@@ -16,7 +16,7 @@
 
 			<div class="thecontent">
 				<?php the_content(); ?>			
-			</div>
+			</div><!-- .thecontent -->
 			
 												
 			<footer>			

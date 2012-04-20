@@ -15,20 +15,24 @@
 			</section>
 		</header>
 			
-			<div class="thecontent">
+		<div class="thecontent">
 			<?php the_content(); ?>
 		</div>
 		
 		<footer>
-	    <nav class="categories">
-	    	<?php echo __( 'Categories' , 'nakeme' ) . ': '; the_category(', '); ?>                          
-	  	</nav>
-	    <?php $tags_list = get_the_tag_list( '', ' ' );
-		  if ( $tags_list ): ?>
-	    <nav class="tags">
-	    	<?php echo __( 'Tags' , 'nakeme' ) . ': ' . $tags_list ; ?>                          
-	  	</nav>
+	    	<nav class="categories">
+	    		<?php echo __( 'Categories' , 'nakeme' ) . ': '; the_category(', '); ?>                          
+	  		</nav>
+	    
+	    	<?php $tags_list = get_the_tag_list( '', ' ' ); ?>
+		  	<?php if ( $tags_list ): ?>
+	
+		    <nav class="tags">
+		    	<?php echo __( 'Tags' , 'nakeme' ) . ': ' . $tags_list ; ?>                          
+		  	</nav>
+		
 			<?php endif; ?>
+		
 			<?php edit_post_link( __( 'Edit', 'nakeme' ), '<p class="edit">', '</p>' ); ?>
 		</footer>
 			

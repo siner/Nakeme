@@ -41,7 +41,7 @@
 
 	/* Charging the Google Jquery */
 	 wp_deregister_script('jquery');
-   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"), false, '1.6.2');
+   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"), false, '1.7.1');
    wp_enqueue_script('jquery');
  
  wp_head(); 
@@ -72,15 +72,15 @@
 		<header id="head" class="row">
 	
 			<hgroup class="twelvecol">
-       	<h1 class="header-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-        <h2 class="header-description"><?php bloginfo( 'description' ); ?></h2>
+       			<h1 class="header-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+        		<h2 class="header-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 			
 			<nav class="twelvecol">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>		
 			</nav>
 
-    </header><!-- #head -->
+		</header><!-- #head -->
     
     
 		<div id="center" class="row">

@@ -32,11 +32,11 @@
 				$bookmarks = get_bookmarks( array(
 					'orderby'        => 'name',
 					'order'          => 'ASC',
-         ));
+         		));
 
-				foreach ( $bookmarks as $bm ) { 
+				foreach ( $bookmarks as $bm ) :
    				 printf( '<li><a href="%s" title="%s">%s</a></li>', $bm->link_url, __($bm->link_name), __($bm->link_name) );
-				}
+				endforeach;
 			?>
 			</ul>
 		</nav><!-- .links -->
