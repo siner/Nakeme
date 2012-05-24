@@ -41,7 +41,7 @@
 
 	/* Charging the Google Jquery */
 	 wp_deregister_script('jquery');
-   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"), false, '1.7.1');
+   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"), false, '1.7.2');
    wp_enqueue_script('jquery');
  
  wp_head(); 
