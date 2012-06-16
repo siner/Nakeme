@@ -3,7 +3,7 @@
 /**
  *	The sidebar declarations
  */
-if ( !function_exists('nakeme_widgets_init') : 
+if ( !function_exists('nakeme_widgets_init') ) : 
 	function nakeme_widgets_init() {
 	
 		register_sidebar( array(

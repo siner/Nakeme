@@ -19,49 +19,13 @@
  		?>
  </title>
 
-	<link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
-
-
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/normalize.css" type="text/css" media="all" />	
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/1140.css" type="text/css" media="all" />	
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/nakeme.css" type="text/css" media="all" />	
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/responsive.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ); ?>/css/print.css" type="text/css" media="print" />	
- 
-
-	<!-- !LEGACY -->
-	<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<script type="text/javascript" src="<?php bloginfo( 'template_url' ); ?>/js/libs/selectivizr-min.js"></script>
-	<![endif]-->
+ <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
 		 
 <?php
  if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); 
 
-	/* Charging the Google Jquery */
-	 wp_deregister_script('jquery');
-   wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"), false, '1.7.2');
-   wp_enqueue_script('jquery');
- 
  wp_head(); 
 ?>
- 
- 
-<!-- The google analytics script -->
- 	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']); /* Change the value to your own */
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
-<!-- End of the Google Analytics script -->
-
 </head>
  
 <body <?php body_class(); ?>>

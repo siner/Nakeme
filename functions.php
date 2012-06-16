@@ -32,7 +32,7 @@ if (!function_exists('nakeme_remove_headlinks')):
 		remove_action( 'wp_head', 'adjacent_posts_rel_link', 10, 0 );
 	}
 endif;
-add_action('init', 'remheadlink');
+add_action('init', 'nakeme_remove_headlinks');
 
 /**
  * Removing the WP version
@@ -81,7 +81,8 @@ require_once('includes/widgets.php');
 require_once('includes/thumbnails.php');
 require_once('includes/pagination.php');
 require_once('includes/searchform.php');
-
+require_once('includes/scripts.php');
+require_once('includes/analytics.php');
 
 
 
