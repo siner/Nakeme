@@ -11,7 +11,7 @@
 	<?php if ( have_comments() ) : ?>
 	
 		<h3 id="comments-title">
-			<?php printf( _n( 'One comentario to %2$s', '%1$s comentarios to %2$s', get_comments_number(), 'nakeme' ), number_format_i18n( get_comments_number() ), '' . get_the_title() . '' ); ?>
+			<?php printf( _n( 'One comment to %2$s', '%1$s comments to %2$s', get_comments_number(), 'nakeme' ), number_format_i18n( get_comments_number() ), '' . get_the_title() . '' ); ?>
 		</h3>
 	
 		<ul id="comment-list">
