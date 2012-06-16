@@ -8,8 +8,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2011-09-17 16:24+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2012-06-16 15:46+0100\n"
+"Last-Translator: Fran Moreno <fran.siner@gmail.com>\n"
 "Language-Team: \n"
 
 #: 404.php:8
@@ -26,7 +26,7 @@ msgstr "El post está protegido por contraseña. Introduce la tuya para poder ve
 
 #: comments.php:14
 msgid "One comment on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
 msgstr[0] "Un comentario en &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
 
