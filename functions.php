@@ -14,6 +14,17 @@ if ( ! function_exists( 'nakeme_setup' ) ):
 		register_nav_menus( array(
 			'primary' => 'Header navigation',
 		) );
+		
+		register_sidebar( array(
+			'name' => __( 'Main Sidebar', 'nakeme' ),
+			'id' => 'main-sidebar',
+			'description' => __( 'The sidebar', 'nakeme' ),
+			'before_widget' => '<nav id="%1$s" class="widget %2$s">',
+			'after_widget' => "</nav>",
+			'before_title' => '<h3>',
+			'after_title' => '</h3>',
+		) );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'nakeme_setup' );
@@ -77,7 +88,6 @@ if (!function_exists('nakeme_get_loop_title')) :
 endif;
 
 
-require_once('includes/widgets.php');
 require_once('includes/thumbnails.php');
 require_once('includes/pagination.php');
 require_once('includes/searchform.php');
