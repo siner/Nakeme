@@ -19,7 +19,7 @@
  		?>
  </title>
 
- <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/img/favicon.ico">
+ <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
 		 
 <?php
  if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); 

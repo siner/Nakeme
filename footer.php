@@ -19,7 +19,7 @@
 
 
 <!--[if lt IE 7 ]>
-<script src="<?php bloginfo('template_url') ?>/js/libs/dd_belatedpng.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/libs/dd_belatedpng.js"></script>
 <script> DD_belatedPNG.fix('img, .png_bg');</script>
 <![endif]-->
 
