@@ -20,6 +20,10 @@
  </title>
 
  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
+
+<!--[if lt IE 9]>
+<script src="<?php echo get_template_directory_uri(); ?>/js/libs/html5shiv.js"></script>
+<![endif]-->
 		 
 <?php
  if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); 
@@ -35,18 +39,14 @@
 		
 		<header id="head" class="row">
 	
-			<hgroup class="twelvecol">
+			<hgroup class="span12">
        			<h1 class="header-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
         		<h2 class="header-description"><?php bloginfo( 'description' ); ?></h2>
 			</hgroup>
 			
-			<nav class="twelvecol">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>		
+			<nav class="span12">
+				<?php wp_nav_menu( array('theme_location' => 'primary')); ?>		
 			</nav>
 
-		</header><!-- #head -->
-    
-    
-		<div id="center" class="row">
-		
+		</header><!-- #head -->		
 		

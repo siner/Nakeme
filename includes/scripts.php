@@ -2,37 +2,18 @@
 
 if ( ! function_exists( 'nakeme_scripts' ) ):
 	function nakeme_scripts() {
-		/* Scripts */
 		wp_deregister_script('jquery');
-	  wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', array(), '1.8.3', false);
-	  wp_register_script('mediaqueries-script', get_template_directory_uri() . '/js/libs/css3-mediaqueries.js', array(), '1.0', true);
-	  wp_register_script('plugins-script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true);
-
-
-   	wp_enqueue_script('jquery');
-   	wp_enqueue_script('mediaqueries-script');
-   	wp_enqueue_script('plugins-script');
-
+		wp_enqueue_script('jquery', 'http://code.jquery.com/jquery-1.10.0.min.js', array(), '1.10.0', false);
+		wp_enqueue_script('bootstrap-script', get_template_directory_uri() . '/js/libs/bootstrap.min.js', array(), '1.0', true);
+		wp_enqueue_script('plugins-script', get_template_directory_uri() . '/js/script.js', array(), '1.0', true);
   }
 endif;
 
 if ( ! function_exists( 'nakeme_styles' ) ):
-	function nakeme_styles() {
-	  /* Styles */
-		wp_register_style( 'normalize-style', get_template_directory_uri() . '/css/normalize.css', array(), '1.0','all' );
-		wp_register_style( '1140-style', get_template_directory_uri() . '/css/1140.css', array(), '1.0','all' );
-		wp_register_style( 'base-style', get_template_directory_uri() . '/style.css', array(), '1.0','all' );
-		wp_register_style( 'nakeme-style', get_template_directory_uri() . '/css/nakeme.css', array(), '1.0','all' );
-		wp_register_style( 'responsive-style', get_template_directory_uri() . '/css/responsive.css', array(), '1.0','all' );
-		wp_register_style( 'print-style', get_template_directory_uri() . '/css/print.css', array(), '1.0','all' );
-
-
-   	wp_enqueue_style( 'normalize-style' );
-   	wp_enqueue_style( '1140-style' );
-   	wp_enqueue_style( 'base-style' );
-   	wp_enqueue_style( 'nakeme-style' );
-   	wp_enqueue_style( 'responsive-style' );
-   	wp_enqueue_style( 'print-style' );
+	function nakeme_styles() {	
+	  	wp_enqueue_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0','all' );
+	  	wp_enqueue_style( 'bootstrap-responsive-style', get_template_directory_uri() . '/css/bootstrap-responsive.min.css', array(), '1.0','all' );
+	  	wp_enqueue_style( 'base-style', get_template_directory_uri() . '/style.css', array(), '1.0','all' );
 	}    
 endif;
 add_action('wp_enqueue_scripts', 'nakeme_scripts');

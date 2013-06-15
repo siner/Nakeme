@@ -1,16 +1,15 @@
-	</div><!-- #center -->	
 	
 	<footer id="colophon" class="row">
-		<section class="fourcol">
-			<div class="content">HTML5 Naked WordPress Theme</div>
+		<section class="span4">
+			<div class="well well-large">HTML5 Naked WordPress Theme</div>
 		</section>
 
-		<section class="fourcol">
-			<div class="content">Developed by <a href="http://www.franmoreno.com">Fran Moreno</a></div>
+		<section class="span4">
+			<div class="well well-large">Developed by <a href="http://www.franmoreno.com">Fran Moreno</a></div>
 		</section>
 
-		<section class="fourcol last">
-			<div class="content">Feel free to change everything, I don't mind ;)</div>
+		<section class="span4">
+			<div class="well well-large">Feel free to change everything, I don't mind ;)</div>
 		</section>
 
 	</footer><!-- #colophon -->

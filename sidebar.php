@@ -1,4 +1,4 @@
-	<section id="sidebar" class="threecol last">
+	<section id="sidebar" class="span3 last">
 
 		<?php if ( ! dynamic_sidebar( 'main-sidebar' ) ) : ?>
 

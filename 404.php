@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-	<div id="content" class="ninecol">		
+<div id="center" class="row">
+
+	<div id="content" class="span9">		
 
 		<article class="error404">
 
@@ -17,5 +19,7 @@
 	</div><!-- #content -->		
 
 	<?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

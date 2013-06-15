@@ -15,7 +15,7 @@ if (!function_exists('nakeme_paginate_links')) :
 			'total' => $wp_query->max_num_pages,
 			'current' => $current,
 			'show_all' => true,
-			'type' => 'plain'
+			'type' => 'list'
 		);
 	
 		if( $wp_rewrite->using_permalinks() )

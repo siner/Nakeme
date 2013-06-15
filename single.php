@@ -1,18 +1,28 @@
 <?php get_header(); ?>
 
-<div id="content" class="ninecol single">		
+<div id="center" class="row">
+
+<div id="content" class="span9 single">		
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
-		<header>
-			<h1><?php the_title(); ?></h1>
-			<section class="info">
-				<?php echo __('Posted by', 'nakeme'); ?> <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo get_the_author(); ?></a>, 
-				<?php echo get_the_date(); ?>, 
-				<?php comments_popup_link( __( 'Comment' , 'nakeme' ), __( '1 Comment' , 'nakeme' ), __( '% Comments' , 'nakeme' ) ); ?>
-			</section>
+		<header class="row">
+			<div class="span2">
+			<?php if(has_post_thumbnail()): ?>
+				<?php the_post_thumbnail('thumbnail',array('class' => 'img-polaroid')); ?>
+			<?php endif;?>
+			</div>
+			<div class="span7">
+		    	<h1><?php the_title(); ?></h1> 
+				<ul class="unstyled">
+				  <li><i class="icon-user"></i> <a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"><?php echo get_the_author(); ?></a></li>
+				  <li><i class="icon-calendar"></i> <?php echo get_the_date(); ?></li>
+				  <li><i class="icon-comment"></i> <?php comments_popup_link( '0', '1', '%' ); ?></li>
+				</ul>
+				
+			</div>				
 		</header>
 			
 		<div class="thecontent">
@@ -44,7 +54,8 @@
 
 </div><!-- #content -->
 
+<?php get_sidebar(); ?>
 
-<?php	get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>

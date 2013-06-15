@@ -7,8 +7,78 @@ Description: HTML5 naked theme for wordpress developers.
 Version: 1.0
 License: The Unlicense
 License URI: LICENSE
-Tags: Naked theme, developers, 1140px CSS Grid, HTML5 Boilerplate, HTML5
+Tags: Naked theme, developers, Twitter Bootstrap, HTML5
 */
+
+
+/* == WordPress WYSIWYG Editor Styles == */
+
+.entry-content img {
+	margin: 0 0 1.5em 0;
+	}
+.alignleft, img.alignleft {
+	margin-right: 1.5em;
+	display: inline;
+	float: left;
+	}
+.alignright, img.alignright {
+	margin-left: 1.5em;
+	display: inline;
+	float: right;
+	}
+.aligncenter, img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	clear: both;
+	}
+.alignnone, img.alignnone {
+	/* not sure about this one */
+	}
+.wp-caption {
+	margin-bottom: 1.5em;
+	text-align: center;
+	padding-top: 5px;
+	}
+.wp-caption img {
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	}
+.wp-caption p.wp-caption-text {
+	line-height: 1.5;
+	font-size: 10px;
+	margin: 0;
+	}
+.wp-smiley {
+	margin: 0 !important;
+	max-height: 1em;
+	}
+blockquote.left {
+	margin-right: 20px;
+	text-align: right;
+	margin-left: 0;
+	width: 33%;
+	float: left;
+	}
+blockquote.right {
+	margin-left: 20px;
+	text-align: left;
+	margin-right: 0;
+	width: 33%;
+	float: right;
+	}
+.gallery dl {}
+.gallery dt {}
+.gallery dd {}
+.gallery dl a {}
+.gallery dl img {}
+.gallery-caption {}
+
+.size-full {}
+.size-large {}
+.size-medium {}
+.size-thumbnail {}
 
 
 
@@ -18,6 +88,10 @@ Tags: Naked theme, developers, 1140px CSS Grid, HTML5 Boilerplate, HTML5
 
 /* General styles */
 body {}
+
+
+
+h1,h2,h3,h4,h5,h6{clear: both;}
 
 
 	
@@ -52,10 +126,9 @@ body {}
 	#content article header{}	
 	#content article header a{}
 
-	#content article header h1,
-	#content article header h2 a{}
+	#content article header h1,#content article header h2{margin-top: 0;}
 	#content article header .info{}
-
+	#content article img{margin-bottom: 10px;}
 		
 		
 	/* The post content */	
@@ -151,6 +224,8 @@ body {}
 .page{}
 .error404{}
 .author{}	
+
+
 
 
 

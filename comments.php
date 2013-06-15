@@ -15,11 +15,11 @@
 		</h3>
 	
 		<ul id="comment-list">
-			<?php wp_list_comments( array( 'style' => 'list', 'avatar_size' => 45) ); ?>
+			<?php wp_list_comments( array( 'callback' => 'nakeme_comments', 'avatar_size' => 45) ); ?>
 		</ul>
 	
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="pagination">
+		<nav class="pagination">
 			<?php paginate_comments_links( ) ?>
 		</nav>
 		<?php endif; // check for comment navigation ?>
@@ -43,6 +43,7 @@
 	$comment_field = '<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="'. _x( 'Comment', 'noun' ) . '" required></textarea></p>';
 	?>
 	
-	<?php comment_form(array('fields' => $fields , 'comment_field' => $comment_field)); ?>
+	<?php //comment_form(array('fields' => $fields , 'comment_field' => $comment_field)); ?>
+	<?php comment_form(); ?>
 
 </section><!-- #comments -->

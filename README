@@ -2,6 +2,4 @@
 /*     NAKEME     */
 /******************/
 
-It's just a naked WordPress theme, using html5 boilerplate and 1140px css grid for the layout, adding some personal features, cleaning code etc.
-
-There is a sample complete style in css/nakeme.css, and some images in the directory img/nakeme. You can use this style to help you in your development. If you want to start one void design, just use the style.css structure to help you. Don't forget to remove the nakeme.css line in header.php to remove the sample style completely.
+It's just a naked WordPress theme, using twitter bootstrap for the layout, adding some personal features, cleaning code etc.

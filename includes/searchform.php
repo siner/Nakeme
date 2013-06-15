@@ -8,8 +8,10 @@ if (!function_exists('nakeme_search_form')) :
 	
 	    $form = '
 			    <form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-				    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . __( 'Search' , 'nakeme' ) . '" />
-				    <input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" />
+				    <div class="input-prepend">
+				      <span class="add-on"><i class="icon-search"></i></span>
+				      <input id="s" name="s" type="text" value="' . get_search_query() . '">
+				    </div>
 			    </form>
 	    ';
 	

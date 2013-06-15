@@ -3,7 +3,6 @@
 /** Tell WordPress to run nakeme_setup() when the 'after_setup_theme' hook is run. */
 if ( ! function_exists( 'nakeme_setup' ) ):
 	function nakeme_setup() {	
-		add_theme_support( 'post-formats', array( 'aside', 'video' ) );
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'automatic-feed-links' );
 	
@@ -56,14 +55,6 @@ if (!function_exists('nakeme_remove_version')) :
 endif;
 add_filter('the_generator', 'nakeme_remove_version');
 
-if (!function_exists('nakeme_wp_nav_menu_args')) :
-	function nakeme_wp_nav_menu_args( $args = '' )
-	{
-		$args['container'] = false;
-		return $args;
-	} // function
-endif;
-add_filter( 'wp_nav_menu_args', 'nakeme_wp_nav_menu_args' );
 
 
 /**
@@ -90,8 +81,9 @@ endif;
 
 require_once('includes/thumbnails.php');
 require_once('includes/pagination.php');
-require_once('includes/searchform.php');
+require_once('includes/comments.php');
 require_once('includes/scripts.php');
+require_once('includes/searchform.php');
 require_once('includes/analytics.php');
 
 
